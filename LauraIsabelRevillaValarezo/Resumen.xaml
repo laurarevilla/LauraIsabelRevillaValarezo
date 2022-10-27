@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LauraIsabelRevillaValarezo.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUsuario" FontSize="20" HorizontalTextAlignment="End" FontAttributes="Bold" />
+            <Label Text="Resumen" HorizontalTextAlignment="Center" FontSize="40" />
+            <ScrollView>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition  Height="50"/>
+                        <RowDefinition  Height="50" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="200"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Nombre Estudiante:" FontSize="Large"  FontAttributes="Bold" Grid.Row="0" Grid.Column="0" />
+                    <Label x:Name="lblNombreEstudiante" FontSize="Large" Grid.Row="0" Grid.Column="1"/>
+                    <Label Text="Total:" FontSize="Large"  FontAttributes="Bold" Grid.Row="1" Grid.Column="0"/>
+                    <Label x:Name="lblTotalPagar" FontSize="Large" Grid.Row="1" Grid.Column="1"/>
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
